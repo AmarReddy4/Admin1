@@ -2,9 +2,15 @@ package com.ecbe.dao;
 
 import java.util.List;
 
+import org.hibernate.SessionFactory;
+
 import com.ecbe.model.Category;
 
 public class CategoryDAOImpl implements CategoryDAO {
+
+	public CategoryDAOImpl(SessionFactory sessionfactory) {
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public boolean save(Category category) {
